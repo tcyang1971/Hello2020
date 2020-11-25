@@ -11,12 +11,17 @@ class MainActivity : AppCompatActivity() {
 
         var txv:TextView = findViewById<TextView>(R.id.txv)
         txv.text = "Hello tcyang"
-
+        TestDEV()
         TestMaster()
     }
 
-    fun TestMaster(){
-        var txv:TextView = findViewById<TextView>(R.id.txv)
+    fun TestMaster() {
+        var txv: TextView = findViewById<TextView>(R.id.txv)
         txv.text = "Master分支"
+    }
+
+    fun TestDEV(){
+        var txv:TextView = findViewById<TextView>(R.id.txv)
+        txv.text = "Dev分支"
     }
 }
